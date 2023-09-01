@@ -1,0 +1,36 @@
+.container-about {
+    margin: 5% 15% 5% 15%;
+    color: #2A2929;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+}
+
+.logo-banner {
+    width: 25%;
+    height: 25%;
+}
+
+.about-text {
+    
+}
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #2A2929;
+    border: 4px solid #E1292D;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.about-button:hover {
+    background-color: #E1292D;
+    color: #FFFFFF;
+}

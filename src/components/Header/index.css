@@ -20,9 +20,22 @@ header {
     padding: 0 20px;
 }
 
-.logo-img {
+.img-logo-header {
     width: 50%;
-    height: 50%;
+    max-height: 50%;
+}
+
+.logo-header {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    text-align:start;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo-header:hover {
+    filter: drop-shadow(0 0 2em #FFDB15);
 }
 
 ul {
