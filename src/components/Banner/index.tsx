@@ -5,7 +5,7 @@ import './index.css';
 
 function Banner() {
     return (
-        <div className="container">
+        <div className="container-banner">
             <img src={IMGBanner} alt="Banner" className="banner-img" />
         </div>
     );

@@ -1,0 +1,36 @@
+
+
+.container-background {
+    background-color: #E1292D;
+    padding: 2%;
+    margin: 1% 0 1% 0;
+}
+
+.titulo-produtos {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.container-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 5% 15% 5% 15%;
+}
+.container-product:hover :not(:hover) {
+    opacity: 0.8;
+}
+
+.product-box {
+    margin: 0;
+    max-width: 100%;
+}
+
+.product {
+    max-width: 100%;
+    height: auto;
+}
+.product:hover {
+    scale: 1.05;
+}
