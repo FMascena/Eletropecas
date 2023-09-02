@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import IMGBanner from '../../assets/banner-cia.jpg';
+import IMGBanner from '../../assets/banner-3.png';
 import './index.css';
 
 function Banner() {
