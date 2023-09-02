@@ -4,6 +4,8 @@ import Footer from "../src/components/Footer";
 import Banner from "../src/components/Banner";
 import About from "../src/components/About";
 import Products from "../src/components/Products";
+import Partners from "../src/components/Partners";
+import Avaliations from "../src/components/Avaliations";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Banner />
       <About />
       <Products />
+      <Partners />
+      <Avaliations />
       <Footer />
     </div>
   )
