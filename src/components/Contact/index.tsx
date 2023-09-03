@@ -9,7 +9,7 @@ const Contact = () => {
         {/* Substitua 'SUA_CHAVE_DE_API' pela sua chave de API do Google Maps */}
         <iframe
           title="Localização da Empresa"
-          src={`https://www.google.com/maps/embed/v1/place?key=SUA_CHAVE_DE_API&q=ENDEREÇO_DA_EMPRESA`}
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyAZDMSDCawk_lKI4fIXbBxpVwgJ8fSKO3E&q=Eletropeças, Rua+General+Lima+da+Silva,+85+-+Aerolândia,+Fortaleza+-+CE,+60850-430`}
           width="100%"
           height="400"
           frameBorder="0"
