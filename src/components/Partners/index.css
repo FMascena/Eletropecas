@@ -11,3 +11,14 @@
     font-size: 42px;
     font-weight: bold;
 }
+
+.container-logos {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.logo-partners {
+    max-width: 100%;
+    height: auto;
+}
+

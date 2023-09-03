@@ -1,7 +1,5 @@
 
 
-
-
 .container-background {
     background-color: #E1292D;
     padding: 2%;
@@ -12,5 +10,9 @@
     color: #FFFFFF;
     font-size: 42px;
     font-weight: bold;
+}
+
+.testimonials-container {
+    background-color: #FFDB15;
 }
 
