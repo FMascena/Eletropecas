@@ -13,26 +13,38 @@ function Avaliations() {
                 'Sou cliente há 3 anos, excelente atendimento, equipe fera. E sempre trazendo produtos de qualidade e com preço justo.',
         },
         {
-            name: 'Jane Smith',
-            company: 'XYZ Creative',
+            name: 'João Tomás',
+            company: 'Cliente',
             message:
-                'Pellentesque tincidunt libero id eros facilisis, in suscipit libero luctus. Nullam fringilla odio et elit malesuada dapibus.',
+                "Atendimento de primeira, peças para motor de partida e alternador tem várias, você encontra tudo que precisa. Não precisei sair para nenhum outro local, pois tinha tudo que precisei."        
         },
         {
-            name: 'Bob Johnson',
-            company: '123 Tech',
+            name: 'Neto Oscár',
+            company: 'Cliente',
             message:
-                'Sed vestibulum elit eu libero fermentum, eget tincidunt urna fermentum. Nunc laoreet nibh vel lectus scelerisque tincidunt.',
+                'Otimo, Atendimento, tudo em pecas para alternadores e Motor de Partida!!',
+        },
+        {
+            name: 'Elisângela',
+            company: 'Cliente',
+            message:
+                'Profissional e referência no mercado!',
+        },
+        {
+            name: 'José Rodrigues',
+            company: 'Boas Novas Manufaturados',
+            message:
+                'Loja com uma equipe de atendimento top.',
         },
     ];
 
     return (
         <div className="container-avaliations">
-            <div className='container-background'>
+            <div className='avaliations-background'>
                 <h1 className='titulo-avaliations'>Depoimentos</h1>
             </div>
             <div className="testimonials-container">
-                <Carousel showArrows={true}>
+                <Carousel showArrows={true} infiniteLoop={true} stopOnHover={false}>
                     {testimonialsData.map((testimonial, index) => (
                         <div key={index} className="testimonial">
                             <h3>{testimonial.name}</h3>

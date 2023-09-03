@@ -14,7 +14,7 @@ import './index.css';
 function Products() {
     return (
         <div className="container-products">
-            <div className='container-background'>
+            <div className='products-background'>
                 <h1 className='titulo-produtos'>Produtos</h1>
             </div>
             <div className='container-product'>

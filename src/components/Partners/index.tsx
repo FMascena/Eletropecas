@@ -15,12 +15,12 @@ import Logo9 from "../../assets/radnaq.jpg";
 function Partners() {
     return (
         <div className="container-partners">
-            <div className='container-background'>
+            <div className='partners-background'>
                 <h1 className='titulo-partners'>Nossos Parceiros</h1>
             </div>
             <div className="carousel-partners">
                 <h1>Conheça alguns de nossos parceiros</h1>
-                <Carousel showArrows={true} autoPlay={true} interval={3000} infiniteLoop={true}>
+                <Carousel showArrows={true} autoPlay={true} interval={3000} infiniteLoop={true} stopOnHover={false}>
                     <div className='container-logos'>
                         <img src={Logo1} alt="Imagem 1" className='logo-partners' />
                     </div>
