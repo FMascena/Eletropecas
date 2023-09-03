@@ -17,8 +17,8 @@ const Contact = () => {
         ></iframe>
       </div>
       <div className="contact-form">
-        <h2>Entre em Contato</h2>
-        <form>
+        <h2 className='titulo-form'>Entre em Contato</h2>
+        <form className='form-container'>
           <div className="form-row">
             <div className="form-group">
               <input type="text" id="name" name="name" placeholder="Nome" />
@@ -26,10 +26,10 @@ const Contact = () => {
             <div className="form-group">
               <input type="email" id="email" name="email" placeholder="Email" />
             </div>
-            <div className="form-group">
+          </div>
+          <div className="form-group">
               <input type="tel" id="phone" name="phone" placeholder="Telefone" />
             </div>
-          </div>
           <div className="form-group">
             <input type="text" id="subject" name="subject" placeholder="Assunto" />
           </div>
