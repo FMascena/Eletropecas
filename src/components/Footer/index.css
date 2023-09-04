@@ -45,3 +45,12 @@ ul {
 li {
     font-weight: bold;
 }
+
+
+@media (max-width: 780px) {
+
+.container {
+    padding: 0;
+}
+
+}
