@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 
 const Contact = () => {
+
   return (
     <div className="contact-page">
       <div className="map-container">
