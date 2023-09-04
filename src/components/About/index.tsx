@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import LogoBanner from '../../assets/logo principal-com-slogan-horizontal.png';
 import './index.css';
 

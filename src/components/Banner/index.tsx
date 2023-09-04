@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import IMGBanner from '../../assets/banner-3.png';
 import './index.css';
 

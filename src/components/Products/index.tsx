@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import Eletrica from "../../assets/ELETRICA.png"
 import Interruptores from "../../assets/Interruptores-1.png"
 import Fitas from "../../assets/FITAS-1.png"

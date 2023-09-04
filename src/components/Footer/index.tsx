@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import LogoFooter from '../../assets/Sub logo principal (1).png';
 import LogoFB from "../../assets/face-removebg-preview.png"
 import LogoInsta from "../../assets/insta-removebg-preview.png"
