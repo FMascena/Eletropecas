@@ -4,7 +4,7 @@ import './index.css';
 const Contact = () => {
 
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <div className="map-container">
         <iframe
           title="Localização da Empresa"

@@ -15,10 +15,11 @@ function Header() {
                 <div>
                     <ul>
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/sobre">SOBRE</a></li>
-                        <li><a href="/produtos">PRODUTOS</a></li>
-                        <li><a href="/servicos">SERVIÇOS</a></li>
-                        <li><a href="/contato">CONTATO</a></li>
+                        <li><a href="#about">SOBRE</a></li>
+                        <li><a href="#products">PRODUTOS</a></li>
+                        <li><a href="#partners">PARCEIROS</a></li>
+                        <li><a href="#avaliations">DEPOIMENTOS</a></li>
+                        <li><a href="#contact">CONTATO</a></li>
                     </ul>
                 </div>
             </div>

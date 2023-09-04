@@ -5,7 +5,7 @@ import './index.css';
 
 function About() {
     return (
-        <div className="container-about">
+        <div className="container-about" id="about">
             <img src={LogoBanner} alt="Logo Banner" className="logo-banner" />
             <p className='about-text'>
                 A Eletropeças Distribuidora é uma empresa dedicada ao segmento elétrico automotivo, que iniciou suas operações em 2016. 

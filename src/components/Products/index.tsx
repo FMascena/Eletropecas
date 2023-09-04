@@ -13,7 +13,7 @@ import './index.css';
 
 function Products() {
     return (
-        <div className="container-products">
+        <div className="container-products" id="products">
             <div className='products-background'>
                 <h1 className='titulo-produtos'>Categorias de Produtos</h1>
             </div>

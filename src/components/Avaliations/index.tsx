@@ -39,7 +39,7 @@ function Avaliations() {
     ];
 
     return (
-        <div className="container-avaliations">
+        <div className="container-avaliations" id="avaliations">
             <div className='avaliations-background'>
                 <h1 className='titulo-avaliations'>Depoimentos</h1>
             </div>

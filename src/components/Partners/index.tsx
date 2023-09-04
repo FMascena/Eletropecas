@@ -14,7 +14,7 @@ import Logo9 from "../../assets/radnaq.jpg";
 
 function Partners() {
     return (
-        <div className="container-partners">
+        <div className="container-partners" id="partners">
             <div className='partners-background'>
                 <h1 className='titulo-partners'>Nossos Parceiros</h1>
             </div>
