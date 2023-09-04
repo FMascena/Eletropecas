@@ -32,7 +32,7 @@ function Avaliations() {
         },
         {
             name: 'José Rodrigues',
-            company: 'Boas Novas Manufaturados',
+            company: 'Boas Novas Remanufaturados',
             message:
                 'Loja com uma equipe de atendimento top.',
         },
