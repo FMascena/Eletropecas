@@ -1,0 +1,31 @@
+/* ScrollToTop.css */
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    background-color: #434343;
+    color: #FFFFFF;
+    width: 45px;
+    height: 42px;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .scroll-to-top-icon {
+    line-height: 42px;
+  }
+  
+  .scroll-to-top.visible {
+    display: block;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #555;
+  }
+  

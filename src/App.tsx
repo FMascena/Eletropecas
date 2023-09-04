@@ -7,6 +7,7 @@ import Products from "../src/components/Products";
 import Partners from "../src/components/Partners";
 import Avaliations from "../src/components/Avaliations";
 import Contact from "../src/components/Contact";
+import ScrollToTop from "../src/components/ScrollToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Partners />
       <Avaliations />
       <Contact />
+      <ScrollToTop />
       <Footer />
     </div>
   )

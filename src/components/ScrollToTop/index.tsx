@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './index.css';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +28,7 @@ const ScrollToTop = () => {
 
   return (
     <div className={`scroll-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-      &#2A2929;
+      <span className="scroll-to-top-icon">^</span>
     </div>
   );
 };
