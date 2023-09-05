@@ -17,7 +17,7 @@ function Footer() {
                     <p>Lojas: CE | RN <br />
                        Rua General Lima da Silva, 85 - Aerolândia, <br />
                        Fortaleza - CE. CEP  60850-430. <br />
-                       (85) 3227-8766
+                       (85) 98663-1361
                     </p>
                 </div>
                 <div className='social'>
