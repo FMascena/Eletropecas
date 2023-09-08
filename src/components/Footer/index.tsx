@@ -1,6 +1,6 @@
-import LogoFooter from '../../assets/Sub logo principal (1).png';
-import LogoFB from "../../assets/face-removebg-preview.png"
-import LogoInsta from "../../assets/insta-removebg-preview.png"
+import LogoFooter from '../../assets/Sub-logo-principal2.png';
+import LogoFB from "../../assets/facebook.svg"
+import LogoInsta from "../../assets/instagram.svg"
 import './index.css';
 
 function Footer() {
