@@ -11,7 +11,7 @@ function Header() {
                     </a>
                 </div>
                 <div className="menu">
-                    <ul>
+                    <ul className="ul-menu">
                         <li><a href="/">HOME</a></li>
                         <li><a href="#about">SOBRE</a></li>
                         <li><a href="#products">PRODUTOS</a></li>

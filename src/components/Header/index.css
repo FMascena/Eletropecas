@@ -68,7 +68,7 @@ li {
     }
 
     ul {
-        font-size: 16px !important;
+        font-size: 0.8em !important;
     }
 
 }
@@ -83,6 +83,7 @@ li {
 
     .logo-header {
         text-align: center;
+        height: 8em;
     }
 
     .img-logo-header {
@@ -90,10 +91,10 @@ li {
     }
 
     .menu {
-        margin-top: 20px;
+        width: 90%;
     }
 
-    ul {
+    .ul-menu {
         gap: 14px;
         list-style: none;
         display: flex;
@@ -101,6 +102,7 @@ li {
         color: #000;
         letter-spacing: 0.05em;
         padding: 0;
+        justify-content: center;
     }
 
     li {
