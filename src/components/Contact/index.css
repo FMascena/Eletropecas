@@ -83,6 +83,13 @@ button:hover {
   border-radius: 5px;
 }
 
+@media (max-width: 1366px) {
+
+  .contact-form {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 480px) {
 
   .contact-page {

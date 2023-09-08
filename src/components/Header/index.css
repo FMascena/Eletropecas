@@ -38,6 +38,7 @@ header {
     filter: drop-shadow(0 0 2em #FFDB15);
 }
 
+
 ul {
     gap: 14px;
     list-style: none;
@@ -49,6 +50,27 @@ ul {
 
 li {
     font-weight: bold;
+}
+
+@media (max-width: 1366px) {
+
+    header {
+        padding: 0 2% 0;
+    }
+
+    .logo-header {
+        width: 50%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    ul {
+        font-size: 16px !important;
+    }
+
 }
 
 @media (max-width: 480px) {
