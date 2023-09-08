@@ -1,4 +1,4 @@
-import LogoHeader from "../../assets/Marca-Dagua-principal.png";
+import LogoHeader from "../../assets/Marca-Dagua-principal-branca3.png";
 import './index.css';
 
 function Header() {
