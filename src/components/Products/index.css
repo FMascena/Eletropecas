@@ -34,3 +34,15 @@
 .product:hover {
     scale: 1.05;
 }
+
+
+@media (max-width: 480px) {
+
+    .container-product {
+        display: flex;
+        flex-direction: column;
+        margin: 5% 1% 5% 1%;
+    }
+
+}
+

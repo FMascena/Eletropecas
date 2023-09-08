@@ -29,7 +29,7 @@ header {
     height: 10em;
     display: flex;
     align-items: center;
-    text-align:start;
+    text-align: start;
     will-change: filter;
     transition: filter 300ms;
 }
@@ -51,8 +51,46 @@ li {
     font-weight: bold;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 480px) {
 
-    
-    
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
+
+    .logo-header {
+        text-align: center;
+    }
+
+    .img-logo-header {
+        width: 100%;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    ul {
+        gap: 14px;
+        list-style: none;
+        display: flex;
+        font-size: 0.5em !important;
+        color: #000;
+        letter-spacing: 0.05em;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    ul {
+        font-size: 0.4em !important;
+    }
+}
+

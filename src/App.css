@@ -10,3 +10,11 @@
 }
 
 
+@media (max-width: 480px) {
+
+  #root {
+    max-width: 100%;
+  }
+
+}
+

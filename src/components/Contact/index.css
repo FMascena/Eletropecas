@@ -72,6 +72,10 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #ac0508;
+}
+
 .map-container iframe {
   width: 100%;
   height: 400px;
@@ -79,7 +83,7 @@ button[type="submit"] {
   border-radius: 5px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
 
   .contact-page {
     flex-direction: column;
@@ -87,6 +91,8 @@ button[type="submit"] {
   }
 
   .map-container {
-    max-width: 100%;
+    max-width: 480px;
+    margin: 0;
   }
 }
+

@@ -10,7 +10,7 @@ function Header() {
                         <img src={LogoHeader} alt="Logo" className="img-logo-header" />
                     </a>
                 </div>
-                <div>
+                <div className="menu">
                     <ul>
                         <li><a href="/">HOME</a></li>
                         <li><a href="#about">SOBRE</a></li>

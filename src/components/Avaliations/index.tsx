@@ -1,55 +1,44 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './index.css';
+import Avaliation1 from "../../assets/avaliation-1.png";
+import Avaliation2 from "../../assets/avaliation-2.png";
+import Avaliation3 from "../../assets/avaliation-3.png";
+import Avaliation4 from "../../assets/avaliation-4.png";
+import Avaliation5 from "../../assets/avaliation-5.png";
+import Avaliation6 from "../../assets/avaliation-6.png";
+import "./index.css"
 
 function Avaliations() {
-    const testimonialsData = [
-        {
-            name: 'Felipe Ferreira',
-            company: 'Auto Peças Felipe',
-            message:
-                'Sou cliente há 3 anos, excelente atendimento, equipe fera. E sempre trazendo produtos de qualidade e com preço justo.',
-        },
-        {
-            name: 'João Tomás',
-            company: 'Cliente',
-            message:
-                "Atendimento de primeira, peças para motor de partida e alternador tem várias, você encontra tudo que precisa. Não precisei sair para nenhum outro local, pois tinha tudo que precisei."        
-        },
-        {
-            name: 'Neto Oscár',
-            company: 'Cliente',
-            message:
-                'Otimo, Atendimento, tudo em pecas para alternadores e Motor de Partida!!',
-        },
-        {
-            name: 'Elisângela',
-            company: 'Cliente',
-            message:
-                'Profissional e referência no mercado!',
-        },
-        {
-            name: 'José Rodrigues',
-            company: 'Boas Novas Remanufaturados',
-            message:
-                'Loja com uma equipe de atendimento top.',
-        },
-    ];
-
     return (
         <div className="container-avaliations" id="avaliations">
             <div className='avaliations-background'>
                 <h1 className='titulo-avaliations'>Depoimentos</h1>
             </div>
-            <div className="testimonials-container">
-                <Carousel showArrows={true} infiniteLoop={true} stopOnHover={false}>
-                    {testimonialsData.map((testimonial, index) => (
-                        <div key={index} className="testimonial">
-                            <h3>{testimonial.name}</h3>
-                            <p>{testimonial.company}</p>
-                            <p>{testimonial.message}</p>
-                        </div>
-                    ))}
+            <div className="carousel-container">
+                <Carousel
+                    autoPlay={true} interval={3000}
+                    infiniteLoop={true}
+                    stopOnHover={true}
+                    showThumbs={false}
+                >
+                    <div className='container-carousel-img'>
+                        <img src={Avaliation1} alt="Imagem 1" className='avaliation-img' />
+                    </div>
+                    <div>
+                        <img src={Avaliation2} alt="Imagem 2" className='avaliation-img' />
+                    </div>
+                    <div>
+                        <img src={Avaliation3} alt="Imagem 3" className='avaliation-img' />
+                    </div>
+                    <div>
+                        <img src={Avaliation4} alt="Imagem 4" className='avaliation-img' />
+                    </div>
+                    <div>
+                        <img src={Avaliation5} alt="Imagem 5" className='avaliation-img' />
+                    </div>
+                    <div>
+                        <img src={Avaliation6} alt="Imagem 6" className='avaliation-img' />
+                    </div>
                 </Carousel>
             </div>
         </div>
