@@ -1,5 +1,3 @@
-
-
 .partners-background {
     background-color: #E1292D;
     padding: 1%;
@@ -20,5 +18,7 @@
 .logo-partners {
     max-width: 100%;
     height: auto;
+    width: auto;
+    margin: 0 auto;
 }
 

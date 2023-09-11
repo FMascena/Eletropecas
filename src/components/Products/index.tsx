@@ -17,31 +17,31 @@ const Products = () => {
             </div>
             <div className='container-product'>
                 <div className='product-box'>
-                    <img src={Eletrica} alt="Alternadores" className='product' />
+                    <img src={Eletrica} alt="Eletrica" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Quimicos} alt="Ventiladores" className='product' />
+                    <img src={Quimicos} alt="Quimicos" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Suspensao} alt="Bobina de Campo" className='product' />
+                    <img src={Suspensao} alt="Suspensao" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Fitas} alt="Kits Reparo" className='product' />
+                    <img src={Fitas} alt="Fitas" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Interruptores} alt="Lâmpadas" className='product' />
+                    <img src={Interruptores} alt="Interruptores" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Iluminacao} alt="Fusível Lâmina" className='product' />
+                    <img src={Iluminacao} alt="Iluminacao" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Conectores} alt="Regulador de Voltagem" className='product' />
+                    <img src={Conectores} alt="Conectores" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Cabos} alt="Porta Escovas" className='product' />
+                    <img src={Cabos} alt="Cabos" className='product' />
                 </div>
                 <div className='product-box'>
-                    <img src={Fusíveis} alt="Conjunto Planetaria" className='product' />
+                    <img src={Fusíveis} alt="Fusíveis" className='product' />
                 </div>
             </div>
         </div>

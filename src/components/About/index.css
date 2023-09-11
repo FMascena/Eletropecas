@@ -15,13 +15,9 @@
     height: auto;
 }
 
-.about-text {
-    /* Estilos adicionais, se necessário */
-}
-
 .button-container {
-    text-align: center; /* Centraliza horizontalmente o botão */
-    margin-top: 20px; /* Adicione margem superior para centralizar verticalmente o botão */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .about-button {
@@ -40,4 +36,12 @@
 .about-button:hover {
     background-color: #E1292D;
     color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+
+    .button-container {
+        margin-bottom: 2em;
+    }
+
 }
