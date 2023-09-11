@@ -1,4 +1,4 @@
-import LogoFooter from '../../assets/Sub-logo-principal2.png';
+import LogoFooter from '../../assets/SUBLOGO-PRINCIPAL-SEM-FUNDO-3.png';
 import LogoFB from "../../assets/facebook.svg"
 import LogoInsta from "../../assets/instagram.svg"
 import './index.css';
