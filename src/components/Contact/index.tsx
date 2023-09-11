@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import './index.css';
 
@@ -11,7 +11,7 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = async (e: { preventDefault: () => void; target: string | HTMLFormElement; }) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const serviceID = 'service_kvq7nou';
@@ -19,7 +19,7 @@ const Contact = () => {
     const userID = 'YFrSONqHgQtGN4EjI';
 
     try {
-      await emailjs.sendForm(serviceID, templateID, e.target, userID);
+      await emailjs.sendForm(serviceID, templateID, e.currentTarget, userID);
       alert('Mensagem enviada com sucesso!');
 
       setFormData({
@@ -34,7 +34,7 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
