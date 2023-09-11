@@ -1,6 +1,43 @@
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './index.css';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleSubmit = async (e: { preventDefault: () => void; target: string | HTMLFormElement; }) => {
+    e.preventDefault();
+
+    const serviceID = 'service_kvq7nou';
+    const templateID = 'template_d0ismc6';
+    const userID = 'YFrSONqHgQtGN4EjI';
+
+    try {
+      await emailjs.sendForm(serviceID, templateID, e.target, userID);
+      alert('Mensagem enviada com sucesso!');
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Erro ao enviar mensagem:', error);
+    }
+  };
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   return (
     <div>
       <div className='avaliations-background'>
@@ -19,23 +56,58 @@ const Contact = () => {
         </div>
         <div className="contact-form">
           <h2 className='titulo-form'>Entre em Contato</h2>
-          <form className='form-container'>
+          <form className='form-container' onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
-                <input type="text" id="name" name="name" placeholder="Nome" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-group">
-                <input type="email" id="email" name="email" placeholder="Email" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </div>
             </div>
             <div className="form-group">
-              <input type="tel" id="phone" name="phone" placeholder="Telefone" />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Telefone"
+                value={formData.phone}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <input type="text" id="subject" name="subject" placeholder="Assunto" />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Assunto"
+                value={formData.subject}
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <textarea id="message" name="message" rows={4} placeholder="Mensagem"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                placeholder="Mensagem"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
             </div>
             <button type="submit">Enviar mensagem</button>
           </form>
