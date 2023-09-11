@@ -8,7 +8,7 @@ import Avaliation5 from "../../assets/avaliation-5.png";
 import Avaliation6 from "../../assets/avaliation-6.png";
 import "./index.css"
 
-function Avaliations() {
+const Avaliations = () => {
     return (
         <div className="container-avaliations" id="avaliations">
             <div className='avaliations-background'>

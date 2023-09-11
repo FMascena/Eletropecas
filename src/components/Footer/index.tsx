@@ -3,7 +3,7 @@ import LogoFB from "../../assets/facebook.svg"
 import LogoInsta from "../../assets/instagram.svg"
 import './index.css';
 
-function Footer() {
+const Footer = () => {
     return (
         <footer>
             <div className="container">

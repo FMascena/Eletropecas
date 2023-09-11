@@ -11,7 +11,7 @@ import Logo7 from "../../assets/cobix.jpg";
 import Logo8 from "../../assets/edanti.png";
 import Logo9 from "../../assets/radnaq.jpg";
 
-function Partners() {
+const Partners = () => {
     return (
         <div className="container-partners" id="partners">
             <div className='partners-background'>

@@ -1,7 +1,7 @@
 import LogoHeader from "../../assets/Marca-Dagua-principal-branca3.png";
 import './index.css';
 
-function Header() {
+const Header = () => {
     return (
         <header>
             <div className="container">

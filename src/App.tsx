@@ -9,7 +9,7 @@ import Avaliations from "../src/components/Avaliations";
 import Contact from "../src/components/Contact";
 import ScrollToTop from "../src/components/ScrollToTop";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -25,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -9,7 +9,7 @@ import Cabos from "../../assets/CABOS-1.png"
 import Fusíveis from "../../assets/FUSIVEIS-1.png"
 import './index.css';
 
-function Products() {
+const Products = () => {
     return (
         <div className="container-products" id="products">
             <div className='products-background'>

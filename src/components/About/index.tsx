@@ -1,7 +1,7 @@
 import LogoBanner from '../../assets/logo principal-com-slogan-horizontal.png';
 import './index.css';
 
-function About() {
+const About = () => {
     return (
         <div className="container-about" id="about">
             <img src={LogoBanner} alt="Logo Banner" className="logo-banner" />
