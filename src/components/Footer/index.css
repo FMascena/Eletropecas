@@ -36,6 +36,7 @@ footer {
     padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
+    text-align: left;
   }
   .logo:hover {
     filter: drop-shadow(0 0 2em #FFDB15);
@@ -44,6 +45,12 @@ footer {
 .logo-social {
     margin: 5%;
     width: 25%;
+}
+
+.rights {
+    align-items: flex-end;
+    text-align: left;
+    margin-right: 2%;
 }
 
 ul {
@@ -59,11 +66,21 @@ li {
     font-weight: bold;
 }
 
+@media (max-width: 1366px) {
+
+    .logo {
+        display: none;
+    }
+}
 
 @media (max-width: 780px) {
 
 .container {
     padding: 0;
+}
+
+.logo {
+    display: none;
 }
 
 }

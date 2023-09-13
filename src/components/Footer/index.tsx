@@ -12,12 +12,25 @@ const Footer = () => {
                         <img src={LogoFooter} alt="Logo" className="logo-img" />
                     </a>
                 </div>
+                <div className='rights'>
+                    <p> <br />
+                        Eletropeças Distribuidora Comercio e Servicos LTDA <br />
+                        CNPJ 25.101.773/0001-95 <br />
+                        <br />
+                        <br />
+                        &copy; Copyright 2023. Todos os direitos reservados.
+                    </p>
+                </div>
                 <div className='maps'>
                     <h1>Nossos endereços</h1>
-                    <p>Lojas: CE | RN <br />
-                       Rua General Lima da Silva, 85 - Aerolândia, <br />
-                       Fortaleza - CE. CEP  60850-430. <br />
-                       (85) 98663-1361
+                    <p>
+                        Rua General Lima da Silva, 85 - Aerolândia, <br />
+                        Fortaleza - CE. CEP  60850-430. <br />
+                        (85) 98663-1361 <br />
+                        <br />
+                        Av. das Fronteiras, loja 01, N° 1221 - <br />
+                        Nossa Sra. da Apresentação, Natal - RN, CEP 59114-275 <br />
+                        (84) 99972-4831
                     </p>
                 </div>
                 <div className='social'>
