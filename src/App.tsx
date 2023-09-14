@@ -8,6 +8,7 @@ import Partners from "../src/components/Partners";
 import Avaliations from "../src/components/Avaliations";
 import Contact from "../src/components/Contact";
 import ScrollToTop from "../src/components/ScrollToTop";
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Avaliations />
       <Contact />
       <ScrollToTop />
+      <Analytics />
       <Footer />
     </div>
   )
