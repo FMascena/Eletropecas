@@ -2,8 +2,27 @@ import { useState, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import './index.css';
 
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+  [key: string]: string;
+}
+
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData: ContactFormData = {
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  };
+
+  const [formData, setFormData] = useState<ContactFormData>(initialFormData);
+
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({
     name: '',
     email: '',
     phone: '',
@@ -11,8 +30,25 @@ const Contact = () => {
     message: '',
   });
 
+  const isFormValid = () => {
+    const requiredFields = ['name', 'email', 'phone'];
+
+    for (const fieldName of requiredFields) {
+      if (!formData[fieldName] || formData[fieldName].trim() === '') {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!isFormValid()) {
+      alert('Por favor, preencha todos os campos antes de enviar o formulário.');
+      return;
+    }
 
     const serviceID = 'service_kvq7nou';
     const templateID = 'template_d0ismc6';
@@ -22,7 +58,9 @@ const Contact = () => {
       await emailjs.sendForm(serviceID, templateID, e.currentTarget, userID);
       alert('Mensagem enviada com sucesso!');
 
-      setFormData({
+      setFormData(initialFormData);
+
+      setFormErrors({
         name: '',
         email: '',
         phone: '',
@@ -35,6 +73,7 @@ const Contact = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormErrors({ ...formErrors, [e.target.name]: '' });
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -67,6 +106,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                 />
+                <span className="error-message">{formErrors.name}</span>
               </div>
               <div className="form-group">
                 <input
@@ -77,6 +117,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                 />
+                <span className="error-message">{formErrors.email}</span>
               </div>
             </div>
             <div className="form-group">
@@ -88,6 +129,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
               />
+              <span className="error-message">{formErrors.phone}</span>
             </div>
             <div className="form-group">
               <input
@@ -98,6 +140,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
               />
+              <span className="error-message">{formErrors.subject}</span>
             </div>
             <div className="form-group">
               <textarea
@@ -108,6 +151,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
+              <span className="error-message">{formErrors.message}</span>
             </div>
             <button type="submit">Enviar mensagem</button>
           </form>
