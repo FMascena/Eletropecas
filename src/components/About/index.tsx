@@ -12,7 +12,7 @@ const About = () => {
                 busca de produtos e serviços que ofereçam a melhor relação custo-benefício para nossos clientes.
             </p>
             <div className="button-container">
-                <a href="https://api.whatsapp.com/message/GQAS7KR2YX66E1?autoload=1&app_absent=0" className='about-button'>
+                <a href="https://wa.me/5585986631361" className='about-button'>
                     Fale com um consultor!
                 </a>
             </div>

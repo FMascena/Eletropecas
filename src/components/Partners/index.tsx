@@ -16,7 +16,7 @@ const Partners = () => {
     const settings = {
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         infinite: true,
         pauseOnHover: false,
         slidesToShow: 3,

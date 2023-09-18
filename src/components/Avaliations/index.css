@@ -11,12 +11,15 @@
 }
 
 .carousel-container {
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 30px 20px 0 20px;
 }
 
-/* Estilize as imagens no carrossel como desejar */
+.carousel .slider.animated {
+  max-width: 100%;
+}
+
 .avaliation-img {
   max-width: 25%;
   height: auto;
@@ -25,17 +28,18 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para o carrossel ativo (quando o mouse está sobre ele) */
+.li-img {
+  max-width: 100%;
+}
+
 .carousel:hover {
   animation-play-state: paused;
 }
 
-/* Estilos para o carrossel quando não está ativo (sem foco) */
 .carousel:focus {
   animation-play-state: running;
 }
 
-/* Estilos para os botões de navegação (opcional) */
 .control-arrow {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
@@ -48,14 +52,12 @@
   cursor: pointer;
 }
 
-/* Estilos para os botões de navegação ativos (opcional) */
 .carousel .control-arrow.control-next::before,
 .carousel .control-arrow.control-prev::before {
   color: white;
   font-size: 24px;
 }
 
-/* Estilos para os botões de navegação inativos (opcional) */
 .carousel .control-arrow.control-disabled::before {
   color: #ccc;
 }
