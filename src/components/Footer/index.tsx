@@ -12,6 +12,15 @@ const Footer = () => {
                         <img src={LogoFooter} alt="Logo" className="logo-img" />
                     </a>
                 </div>
+                <div className='rights'>
+                    <p> <br />
+                        Eletropeças Distribuidora Comercio e Servicos LTDA <br />
+                        CNPJ 25.101.773/0001-95 <br />
+                        <br />
+                        <br />
+                        &copy; Copyright 2023. Todos os direitos reservados.
+                    </p>
+                </div>
                 <div className='maps'>
                     <h1>Nossos endereços</h1>
                     <p>
@@ -32,14 +41,6 @@ const Footer = () => {
                     <a href="https://www.instagram.com/eletropecasdistribuidora/">
                         <img src={LogoInsta} alt="instagram" className='logo-social' />
                     </a>
-                </div>
-                <div className='rights'>
-                    <p> <br />
-                        ELETROPECAS DISTRIBUIDORA COMERCIO E SERVICOS LTDA - 25.101.773/0001-95 <br />
-                        <br />
-                        <br />
-                        &copy; Copyright 2023. Todos os direitos reservados.
-                    </p>
                 </div>
             </div>
         </footer>
