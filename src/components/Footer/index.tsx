@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
                 <div className='rights'>
                     <p> <br />
-                        ELETROPECAS DISTRIBUIDORA COMERCIO E SERVICOS LTDA - 25.101.773/0001-95 <br />
+                        Eletropecas Distribuidora Comercio e Servicos LTDA - CNPJ 25.101.773/0001-95 <br />
                         <br />
                         <br />
                         &copy; Copyright 2023. Todos os direitos reservados.
