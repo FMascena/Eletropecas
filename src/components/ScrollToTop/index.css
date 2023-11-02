@@ -3,8 +3,8 @@
 .scroll-to-top {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 105px;
+    right: 30px;
     opacity: 1;
     background-color: #434343;
     color: #FFFFFF;
@@ -29,3 +29,10 @@
     background-color: #555;
   }
   
+
+  @media (max-width: 480px) {
+
+    .scroll-to-top.visible {
+      display: none;
+    }
+  }

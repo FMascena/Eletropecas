@@ -12,7 +12,7 @@ const About = () => {
                 busca de produtos e serviços que ofereçam a melhor relação custo-benefício para nossos clientes.
             </p>
             <div className="button-container">
-                <a href="https://wa.me/5585986631361" className='about-button'>
+                <a href="https://wa.me/5585989831273" className='about-button'>
                     Fale com um consultor!
                 </a>
             </div>

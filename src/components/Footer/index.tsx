@@ -17,7 +17,7 @@ const Footer = () => {
                     <p>
                         Rua General Lima da Silva, 85 - Aerolândia, <br />
                         Fortaleza - CE. CEP  60850-430. <br />
-                        (85) 98663-1361 <br />
+                        (85) 98983-1273 <br />
                         <br />
                         Av. das Fronteiras, loja 01, N° 1221 - <br />
                         Nossa Sra. da Apresentação, Natal - RN, CEP 59114-275 <br />
