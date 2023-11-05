@@ -26,3 +26,8 @@
     margin: 0 auto;
 }
 
+.slick-slider {
+    width: 80%;
+    left: 10%;
+}
+
